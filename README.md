@@ -158,6 +158,8 @@ As a result, I am now deeply suspicious of any code which attempts to
 manipulate Java stack traces. I would much rather have an ugly,
 verbose, **reliable** exception reporting mechanism than something
 which is easier to read but occasionally loses critical information.
+(It's hard to make repeatable test cases for these errors when they
+are related to JVM optimizations such as OmitStackTraceInFastThrow.)
 
 As a consultant, I often work on Clojure code bases which are not my
 own. Exception pretty-printers often appear in these projects as
